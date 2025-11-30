@@ -3,458 +3,371 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APUSH: The South and Slavery 1790s-1850s</title>
+    <title>APUSH Chapter 10: The South and Slavery</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        body {
             font-family: 'Georgia', serif;
-            line-height: 1.6;
+        }
+        
+        body {
+            background-color: #f5f5f5;
             color: #333;
-            background-color: #f8f9fa;
+            line-height: 1.6;
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
+        
         header {
-            background: linear-gradient(135deg, #8B0000, #B22222);
+            background: linear-gradient(to right, #8B0000, #B22222);
             color: white;
             padding: 2rem 0;
             text-align: center;
-            margin-bottom: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
+        
         h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
         }
-
+        
         .subtitle {
             font-size: 1.2rem;
-            opacity: 0.9;
+            font-style: italic;
         }
-
-        .key-concept {
-            background: #2c3e50;
-            color: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-            border-left: 5px solid #e74c3c;
-        }
-
-        .nav-tabs {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin: 2rem 0;
-            justify-content: center;
-        }
-
-        .nav-tab {
-            padding: 12px 24px;
-            background: #34495e;
-            color: white;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .nav-tab:hover {
-            background: #2c3e50;
-            transform: translateY(-2px);
-        }
-
-        .nav-tab.active {
-            background: #e74c3c;
-        }
-
-        .content-section {
-            display: none;
-            background: white;
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
         }
-
-        .content-section.active {
-            display: block;
-            animation: fadeIn 0.5s ease;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        h2 {
-            color: #8B0000;
-            border-bottom: 2px solid #e74c3c;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        h3 {
-            color: #2c3e50;
-            margin: 1.5rem 0 1rem 0;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1rem 0;
-            background: white;
-        }
-
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border: 1px solid #ddd;
-        }
-
-        th {
-            background: #8B0000;
-            color: white;
-            font-weight: bold;
-        }
-
-        tr:nth-child(even) {
-            background: #f8f9fa;
-        }
-
-        tr:hover {
-            background: #e9ecef;
-        }
-
-        .video-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .video-card {
-            background: white;
+        
+        .key-concept {
+            background-color: #fff;
+            border-left: 5px solid #8B0000;
             padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            border-left: 4px solid #e74c3c;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
-        .video-title {
-            font-weight: bold;
+        
+        .key-concept h2 {
             color: #8B0000;
             margin-bottom: 1rem;
         }
-
-        .timeline {
-            position: relative;
-            max-width: 800px;
-            margin: 2rem auto;
+        
+        .section {
+            background-color: #fff;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
-        .timeline-item {
-            padding: 1rem;
-            margin: 1rem 0;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            border-left: 4px solid #8B0000;
-        }
-
-        .year {
-            font-weight: bold;
+        
+        .section h2 {
             color: #8B0000;
-            margin-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
-
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #8B0000;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .video-summary {
+            background-color: #fff;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .video-summary h2 {
+            color: #8B0000;
+            margin-bottom: 1rem;
+        }
+        
+        .name-drops {
+            background-color: #fff;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .name-drops h2 {
+            color: #8B0000;
+            margin-bottom: 1rem;
+        }
+        
         footer {
+            background-color: #333;
+            color: white;
             text-align: center;
-            padding: 2rem 0;
+            padding: 1.5rem 0;
             margin-top: 2rem;
-            border-top: 1px solid #ddd;
-            color: #666;
         }
-
+        
         @media (max-width: 768px) {
-            .nav-tabs {
-                flex-direction: column;
+            .container {
+                padding: 1rem;
             }
             
-            .nav-tab {
-                text-align: center;
+            table, thead, tbody, th, td, tr {
+                display: block;
             }
             
-            table {
-                font-size: 0.9rem;
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
             }
             
-            th, td {
-                padding: 8px;
+            tr {
+                margin-bottom: 1rem;
+                border: 1px solid #ddd;
             }
+            
+            td {
+                border: none;
+                border-bottom: 1px solid #ddd;
+                position: relative;
+                padding-left: 50%;
+            }
+            
+            td:before {
+                position: absolute;
+                top: 12px;
+                left: 15px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: bold;
+            }
+            
+            td:nth-of-type(1):before { content: "Section"; }
+            td:nth-of-type(2):before { content: "Supporting Details & Summary"; }
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>APUSH Chapter 10: The South and Slavery</h1>
+        <p class="subtitle">1790s-1850s: King Cotton and the Expansion of Slavery</p>
+    </header>
+
     <div class="container">
-        <header>
-            <h1>APUSH: The South and Slavery</h1>
-            <div class="subtitle">1790s-1850s - King Cotton and the Expansion of Slavery</div>
-        </header>
-
         <div class="key-concept">
-            <strong>Key Concept 5.2:</strong> Intensified by expansion and deepening regional divisions, debates over slavery and other economic, cultural, and political issues led the nation into civil war.
+            <h2>Key Concept 5.2</h2>
+            <p>Intensified by expansion and deepening regional divisions, debates over slavery and other economic, cultural, and political issues led the nation into civil war.</p>
         </div>
 
-        <div class="nav-tabs">
-            <button class="nav-tab active" onclick="showSection('overview')">Overview</button>
-            <button class="nav-tab" onclick="showSection('reading-guide')">Reading Guide</button>
-            <button class="nav-tab" onclick="showSection('videos')">Video Resources</button>
-            <button class="nav-tab" onclick="showSection('key-terms')">Key Terms</button>
-            <button class="nav-tab" onclick="showSection('timeline')">Timeline</button>
-        </div>
-
-        <!-- Overview Section -->
-        <section id="overview" class="content-section active">
-            <h2>The Cotton Revolution</h2>
-            <p>The invention of the cotton gin in 1793 transformed the American South and set the nation on a collision course over slavery. What was once a declining institution became the foundation of Southern wealth and identity.</p>
-
-            <div class="video-grid">
-                <div class="video-card">
-                    <div class="video-title">The Cotton Gin's Impact</div>
-                    <p>Eli Whitney's invention made cotton production massively profitable, leading to the expansion of slavery and the rise of "King Cotton" as the dominant force in the Southern economy.</p>
-                </div>
-                <div class="video-card">
-                    <div class="video-title">Second Middle Passage</div>
-                    <p>The forced migration of over 1 million enslaved people from the Upper South to the Deep South created one of the largest forced migrations in American history.</p>
-                </div>
-                <div class="video-card">
-                    <div class="video-title">Southern Society</div>
-                    <p>The Antebellum South developed a distinct social hierarchy dominated by plantation owners and built on the institution of slavery.</p>
-                </div>
-            </div>
-
-            <h3>Major Themes</h3>
-            <ul style="margin-left: 2rem; line-height: 2;">
-                <li><strong>Economic Transformation:</strong> Cotton became the most valuable American export</li>
-                <li><strong>Regional Division:</strong> North industrialized while South remained agricultural</li>
-                <li><strong>Expansion of Slavery:</strong> The "peculiar institution" grew rather than died out</li>
-                <li><strong>African American Community:</strong> Development of distinct culture and resistance</li>
-            </ul>
-        </section>
-
-        <!-- Reading Guide Section -->
-        <section id="reading-guide" class="content-section">
+        <div class="section">
             <h2>Chapter 10 Reading Guide</h2>
-            
             <table>
-                <tr>
-                    <th>Section</th>
-                    <th>Supporting Details & Summary</th>
-                </tr>
-                <tr>
-                    <td><strong>King Cotton and Southern Expansion</strong></td>
-                    <td>• Cotton became the dominant export crop (60% of US exports by 1860)<br>• Expansion into "Old Southwest" - Alabama, Mississippi, Louisiana<br>• "Alabama Fever" migration after War of 1812</td>
-                </tr>
-                <tr>
-                    <td><strong>Slavery the Mainspring—Again</strong></td>
-                    <td>• Northern merchants profited from cotton trade (shipping, insurance)<br>• Northern industrial development financed by Southern cotton profits</td>
-                </tr>
-                <tr>
-                    <td><strong>A Slave Society in a Changing World</strong></td>
-                    <td>• Attitudes hardened after cotton gin made slavery profitable<br>• South remained rural while North industrialized<br>• Capital tied up in land and slaves</td>
-                </tr>
-                <tr>
-                    <td><strong>2nd Middle Passage</strong></td>
-                    <td>• Forced migration of 1+ million enslaved people from Upper to Deep South<br>• "Coffles" of chained people moved westward<br>• Shattered families on massive scale</td>
-                </tr>
-                <tr>
-                    <td><strong>African American Community</strong></td>
-                    <td>• Built distinct culture centered on family and religion<br>• Population grew through natural increase<br>• Community solidarity on larger plantations</td>
-                </tr>
-                <tr>
-                    <td><strong>Slave Resistance</strong></td>
-                    <td>• Everyday resistance: work slowdowns, breaking tools<br>• Overt resistance: Nat Turner's Rebellion (1831)<br>• Cultural resistance through spirituals and religion</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Section</th>
+                        <th>Supporting Details & Summary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>King Cotton and Southern Expansion / Cotton and Expansion into the Old Southwest</td>
+                        <td>• <strong>Why "King Cotton"?</strong> Cotton became the dominant and most profitable export crop in the US, accounting for nearly 60% of American exports by the Civil War. Its economic power led Southerners like James Hammond to boast "Cotton is King," believing it gave the South immense international leverage.<br><br>
+                        • <strong>Where does the South expand?</strong> The South expanded into the "Old Southwest"—the Black Belt region of western Georgia, Alabama, Mississippi, and Louisiana. This was fueled by "Alabama Fever," a massive migration of white Southerners and their slaves after the War of 1812.</td>
+                    </tr>
+                    <tr>
+                        <td>Slavery the Mainspring—Again</td>
+                        <td>• <strong>Is the North Innocent?</strong> No. The text states there was a "direct" connection. Northern merchants provided shipping, insurance, and brokerage for the cotton trade. Furthermore, fortunes made from the slave trade and cotton were invested in northern industrial development, such as the textile mills in Lowell, Massachusetts.</td>
+                    </tr>
+                    <tr>
+                        <td>A Slave Society in a Changing World</td>
+                        <td>• Attitudes toward slavery <strong>hardened</strong> after the cotton gin made it incredibly profitable. While the North abolished slavery and invested in industry, railroads, and cities, the South remained a rural, agricultural society. Its capital was tied up in land and slaves, and it lagged behind in infrastructure and industrialization.</td>
+                    </tr>
+                    <tr>
+                        <td>2nd Middle Passage: The Internal Slave Trade</td>
+                        <td>• <strong>What is this?</strong> The forced migration of over 1 million enslaved people from the Upper South (VA, MD) to the Deep South (AL, MS) to meet the labor demand of the cotton boom. This "coffle" of chained people was a brutal domestic slave trade that shattered families on a massive scale, larger than the Atlantic slave trade to North America.</td>
+                    </tr>
+                    <tr>
+                        <td>The African American Community</td>
+                        <td>• <strong>What was life like?</strong> Despite the brutality of slavery, African Americans built a distinct and enduring culture centered on family and religion. The growth of the slave population through natural increase (not importation) and living in larger groups on plantations allowed this community to solidify.</td>
+                    </tr>
+                    <tr>
+                        <td>From Cradle to Grave</td>
+                        <td>Slavery was a lifelong system. From a young age, children learned survival skills, including how to appear acquiescent to whites while secretly resisting. They lived with the constant fear of family separation through sale.</td>
+                    </tr>
+                    <tr>
+                        <td>Field Work and the Gang System of Labor</td>
+                        <td>The majority of slaves (55%) worked in cotton under the "gang system," which organized them into groups working relentlessly from dawn to dusk. This was physically demanding and brutal labor.</td>
+                    </tr>
+                    <tr>
+                        <td>House Servants</td>
+                        <td>While often better fed and clothed, house servants lived under constant white supervision and scrutiny. They had to perform "servile bows and counterfeit smiles" and had little privacy or time with their own families.</td>
+                    </tr>
+                    <tr>
+                        <td>Slave Families</td>
+                        <td>Slave marriages, though not legally recognized, were a crucial haven of love and intimacy. Families provided a supportive kinship network, and the community acted as an extended family, using terms like "aunt" and "uncle" for other adults.</td>
+                    </tr>
+                    <tr>
+                        <td>Freedom and Resistance / African American Religion</td>
+                        <td>Slaves resisted in both everyday and overt ways. Religion was a key outlet, blending African traditions (like call-and-response) with Christianity. Spirituals were a form of cultural expression and sometimes contained coded messages about resistance and freedom.</td>
+                    </tr>
+                    <tr>
+                        <td>Slave Revolts</td>
+                        <td>Major revolts like <strong>Nat Turner's Rebellion (1831)</strong> in Virginia resulted in the deaths of about 60 white people. While rare, these revolts caused widespread panic in the South and led to much harsher slave codes and restrictions.</td>
+                    </tr>
+                    <tr>
+                        <td>Free African Americans</td>
+                        <td>By 1860, there were nearly 250,000 free African Americans in the South, but their rights were severely limited by <strong>Black Codes</strong>. They could not vote, testify against whites, or carry firearms, and they lived under constant suspicion.</td>
+                    </tr>
+                </tbody>
             </table>
-        </section>
+        </div>
 
-        <!-- Video Resources Section -->
-        <section id="videos" class="content-section">
-            <h2>Video Resources & Analysis</h2>
-            
-            <h3>Short Video Summaries</h3>
+        <div class="video-summary">
+            <h2>Short Videos</h2>
             <table>
-                <tr>
-                    <th>Video</th>
-                    <th>Main Idea</th>
-                    <th>Key Detail #1</th>
-                    <th>Key Detail #2</th>
-                </tr>
-                <tr>
-                    <td><strong>How Inventions Change History</strong></td>
-                    <td>The cotton gin revolutionized the economy but expanded slavery unexpectedly</td>
-                    <td>Before: 1 lb cotton/day; After: 300-1000 lbs/day</td>
-                    <td>Slave population grew from 700,000 (1790) to 4 million (1860)</td>
-                </tr>
-                <tr>
-                    <td><strong>Second Middle Passage</strong></td>
-                    <td>Massive internal slave trade moved over 1 million enslaved people</td>
-                    <td>People chained in "coffles" and forced to walk hundreds of miles</td>
-                    <td>Families routinely separated at auctions for profit</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Video</th>
+                        <th>Main Idea (2-3 Sentences)</th>
+                        <th>Supporting Detail #1</th>
+                        <th>Supporting Detail #2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>How inventions change history (for better and for worse)</td>
+                        <td>The cotton gin, invented by Eli Whitney in 1793, revolutionized the American economy but had the unintended consequence of revitalizing and expanding slavery. Before the gin, slavery was waning; after it, cotton became "king" and the demand for slave labor exploded.</td>
+                        <td>Before the gin, a slave could clean only 1 pound of cotton a day. After the gin, a slave could clean 300 to 1,000 pounds a day.</td>
+                        <td>The slave population grew from 700,000 in 1790 to 4 million in 1860, directly fueled by the profitability of cotton.</td>
+                    </tr>
+                    <tr>
+                        <td>Second Middle Passage</td>
+                        <td>The "Second Middle Passage" was the massive, forced internal slave trade within the United States that moved over a million enslaved people from the Upper South to the Deep South. This trade, which was larger than the transatlantic slave trade to the U.S., was driven by the cotton boom and shattered countless black families.</td>
+                        <td>Enslaved people were often chained together in groups called "coffles" and forced to walk hundreds of miles to new plantations.</td>
+                        <td>Families were routinely separated at auctions, with individuals sold to the highest bidder with little regard for keeping parents and children together.</td>
+                    </tr>
+                </tbody>
             </table>
+        </div>
 
-            <h3>Key Concept Videos</h3>
-            <div class="video-grid">
-                <div class="video-card">
-                    <div class="video-title">Era of Good Feelings</div>
-                    <p><strong>Must Knows:</strong><br>
-                    1. Nationalism & one-party rule (1817-1825)<br>
-                    2. Henry Clay's American System<br>
-                    3. Growing sectionalism beneath surface</p>
-                </div>
-                <div class="video-card">
-                    <div class="video-title">Monroe Doctrine</div>
-                    <p><strong>Must Knows:</strong><br>
-                    1. Warned Europe from Western Hemisphere (1823)<br>
-                    2. Response to Spanish reconquest fears<br>
-                    3. Cornerstone of US foreign policy</p>
-                </div>
-                <div class="video-card">
-                    <div class="video-title">Abolition Movement</div>
-                    <p><strong>Must Knows:</strong><br>
-                    1. Grew from Second Great Awakening<br>
-                    2. Key leaders: Garrison, Douglass, Grimké<br>
-                    3. Used newspapers, speeches, moral arguments</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Key Terms Section -->
-        <section id="key-terms" class="content-section">
-            <h2>Key Terms & Concepts</h2>
-            
-            <h3>American Pageant Chapter 16 Review</h3>
+        <div class="section">
+            <h2>American Pageant Chapter 16 APUSH Review</h2>
             <table>
-                <tr>
-                    <th>Topic</th>
-                    <th>Key Evidence, Names, Laws</th>
-                </tr>
-                <tr>
-                    <td><strong>Missouri Compromise</strong></td>
-                    <td>1820; 36°30' line; Maine (free) & Missouri (slave) balance</td>
-                </tr>
-                <tr>
-                    <td><strong>King Cotton</strong></td>
-                    <td>Eli Whitney's Cotton Gin (1793); Black Belt expansion; "Cotton is King"</td>
-                </tr>
-                <tr>
-                    <td><strong>Antebellum South</strong></td>
-                    <td>Social hierarchy: 1. Planters, 2. Small slaveholders, 3. Yeomen, 4. Poor whites; Oligarchy rule</td>
-                </tr>
-                <tr>
-                    <td><strong>African American Communities</strong></td>
-                    <td>Strong family bonds; African American Christianity; spirituals; community support</td>
-                </tr>
-                <tr>
-                    <td><strong>Slave Resistance</strong></td>
-                    <td>Covert: slowdowns, sabotage; Overt: Nat Turner (1831); Underground Railroad</td>
-                </tr>
-                <tr>
-                    <td><strong>Abolitionist Movement</strong></td>
-                    <td>William Lloyd Garrison (The Liberator); Frederick Douglass; David Walker; Grimké Sisters</td>
-                </tr>
-                <tr>
-                    <td><strong>Southern Reaction</strong></td>
-                    <td>"Positive good" argument; Gag Rule (1836-1844); harsher slave codes after rebellions</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>TOPIC</th>
+                        <th>EVIDENCE. NAMES. PLACES. PEOPLE. INVENTIONS. LAWS.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IMPORTANT TERMS SO FAR...</td>
+                        <td><strong>Eli Whitney, Cotton Gin, "King Cotton," Industrial Revolution, Northwest Ordinance (1787), 3/5ths Compromise, Fugitive Slave Law, Missouri Compromise (1820), Antebellum South</strong></td>
+                    </tr>
+                    <tr>
+                        <td>MISSOURI COMPROMISE</td>
+                        <td><strong>1820;</strong> Admitted Missouri as a slave state and Maine as a free state to maintain balance; drew a line at 36°30' latitude, banning slavery north of it in the Louisiana Territory.</td>
+                    </tr>
+                    <tr>
+                        <td>KING COTTON</td>
+                        <td><strong>Eli Whitney's Cotton Gin (1793);</strong> made short-staple cotton profitable; led to massive expansion of slavery and cotton cultivation into the <strong>Black Belt / Old Southwest.</strong></td>
+                    </tr>
+                    <tr>
+                        <td>ANTEBELLUM SOUTH</td>
+                        <td>Social Hierarchy: 1. Plantation Owners ("1%), 2. Small Slaveholders, 3. Yeoman Farmers (majority, owned no slaves), 4. Poor Whites; <strong>Oligarchy</strong>- ruled by wealthy plantation owners; lacked industry/immigration.</td>
+                    </tr>
+                    <tr>
+                        <td>AFRICAN AMERICAN COMMUNITIES</td>
+                        <td><strong>Slave Culture:</strong> strong family bonds (though threatened by sale), <strong>African American Christianity</strong> (spirituals, blend of African and Christian traditions).</td>
+                    </tr>
+                    <tr>
+                        <td>SLAVERY</td>
+                        <td><strong>Chatel Slavery:</strong> people were legal property; families split by sale; illegal to teach reading/writing; varied experiences (gang system, house servants, skilled laborers).</td>
+                    </tr>
+                    <tr>
+                        <td>RESISTANCE</td>
+                        <td><strong>Covert:</strong> work slowdowns, breaking tools, feigning illness. <strong>Overt:</strong> Running away (Underground Railroad), Revolts (<strong>Nat Turner, 1831</strong>).</td>
+                    </tr>
+                    <tr>
+                        <td>ABOLITIONIST MOVEMENT</td>
+                        <td><strong>William Lloyd Garrison</strong> (<em>The Liberator</em>, immediate emancipation); <strong>Frederick Douglass</strong> (North Star, powerful orator); <strong>David Walker</strong> (<em>Appeal...</em>, called for violent uprising); <strong>Grimké Sisters</strong> (from SC, spoke against slavery).</td>
+                    </tr>
+                    <tr>
+                        <td>SOUTHERN REACTION</td>
+                        <td><strong>Pro-Slavery Argument:</strong> claimed slavery was a "positive good" that civilized Africans and was more humane than Northern "wage slavery"; <strong>Gag Rule</strong> (1836-1844) in Congress; harsher <strong>Slave Codes</strong> after rebellions.</td>
+                    </tr>
+                </tbody>
             </table>
-        </section>
+        </div>
 
-        <!-- Timeline Section -->
-        <section id="timeline" class="content-section">
-            <h2>Historical Timeline</h2>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="year">1793</div>
-                    <div class="event">Eli Whitney invents the cotton gin, revolutionizing cotton production and making slavery immensely profitable</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="year">1808</div>
-                    <div class="event">Congress bans international slave trade, leading to growth of domestic slave trade</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="year">1819-1820</div>
-                    <div class="event">Missouri Crisis leads to Missouri Compromise, temporarily resolving slavery expansion issue</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="year">1820s-1830s</div>
-                    <div class="event">"Second Middle Passage" - massive internal slave trade moves 1 million+ enslaved people westward</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="year">1831</div>
-                    <div class="event">Nat Turner's Rebellion - bloodiest slave revolt; leads to harsher slave codes throughout South</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="year">1830s</div>
-                    <div class="event">Abolitionist movement gains strength with Garrison's Liberator and growing northern opposition to slavery</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="year">1850</div>
-                    <div class="event">Cotton accounts for 60% of US exports; "King Cotton" doctrine fully established</div>
-                </tr>
-            </div>
-        </section>
-
-        <footer>
-            <p>AP United States History Study Resource | The South and Slavery 1790s-1850s</p>
-            <p>Key Concept 5.2: Intensified by expansion and deepening regional divisions, debates over slavery and other economic, cultural, and political issues led the nation into civil war.</p>
-        </footer>
+        <div class="name-drops">
+            <h2>3 Name Drops (Video Summaries)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Video</th>
+                        <th>Must Know #1</th>
+                        <th>Must Know #2</th>
+                        <th>Must Know #3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3 Must Knows about the Era of Good Feelings</td>
+                        <td>A period of <strong>heightened nationalism and political unity</strong> (only one party: Democratic-Republicans) during President James Monroe's terms (1817-1825).</td>
+                        <td>Marked by <strong>Henry Clay's American System</strong> (internal improvements, national bank, tariff) and the <strong>Monroe Doctrine</strong>.</td>
+                        <td>The name is misleading; beneath the surface, <strong>sectionalism</strong> was growing over issues like slavery (Missouri Compromise) and the tariff, and the Panic of 1819 caused economic turmoil.</td>
+                    </tr>
+                    <tr>
+                        <td>3 Must Knows about the Monroe Doctrine</td>
+                        <td>A <strong>foreign policy statement</strong> (1823) warning European powers not to interfere in the Western Hemisphere or colonize further.</td>
+                        <td>It was issued due to fears of <strong>Spanish reconquest</strong> of new Latin American republics and <strong>Russian expansion</strong> on the Pacific coast.</td>
+                        <td>It became a <strong>cornerstone of US foreign policy</strong>, asserting US dominance in the Americas and was later used by presidents like Teddy Roosevelt to justify intervention.</td>
+                    </tr>
+                    <tr>
+                        <td>3 Must Knows about the Abolition Movement</td>
+                        <td>Grew from the <strong>religious and moral fervor</strong> of the Second Great Awakening, which emphasized perfecting society and framed slavery as a sin.</td>
+                        <td>Key abolitionists included <strong>William Lloyd Garrison</strong> (immediate emancipation), <strong>Frederick Douglass</strong> (powerful ex-slave orator), and the <strong>Grimké Sisters</strong> (Southerners who spoke out).</td>
+                        <td>Abolitionists used various tactics, including <strong>newspapers (<em>The Liberator</em>, <em>North Star</em>), public lectures, and appeals to religion and the Declaration of Independence</strong> to argue their cause.</td>
+                    </tr>
+                    <tr>
+                        <td>What Was the Missouri Compromise?</td>
+                        <td>It was a temporary political solution to the crisis of Missouri applying for statehood as a slave state, which would have upset the <strong>balance of power</strong> between free and slave states in the Senate.</td>
+                        <td>The compromise <strong>preserved the balance</strong> by admitting Missouri as a slave state and <strong>Maine as a free state</strong>, and it <strong>banned slavery</strong> in the rest of the Louisiana Territory north of the <strong>36°30' parallel</strong>.</td>
+                        <td>It <strong>postponed the Civil War</strong> but did not resolve the underlying issue of slavery. It highlighted the deep <strong>sectional divisions</strong> that would only intensify in the coming decades.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
-    <script>
-        function showSection(sectionId) {
-            // Hide all sections
-            document.querySelectorAll('.content-section').forEach(section => {
-                section.classList.remove('active');
-            });
-            
-            // Remove active class from all tabs
-            document.querySelectorAll('.nav-tab').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            
-            // Show selected section and activate tab
-            document.getElementById(sectionId).classList.add('active');
-            event.currentTarget.classList.add('active');
-        }
-
-        // Add some interactive features
-        document.addEventListener('DOMContentLoaded', function() {
-            // Add click animations to table rows
-            document.querySelectorAll('tr').forEach(row => {
-                row.addEventListener('click', function() {
-                    this.style.backgroundColor = '#e9ecef';
-                    setTimeout(() => {
-                        this.style.backgroundColor = '';
-                    }, 300);
-                });
-            });
-        });
-    </script>
+    <footer>
+        <p>APUSH Chapter 10 Study Guide | The South and Slavery (1790s-1850s)</p>
+    </footer>
 </body>
 </html>
